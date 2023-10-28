@@ -1,0 +1,60 @@
+/* CONTAINER */
+.container {
+    max-width: 1140px;
+}
+
+/* MARGIN */
+.mg-auto {
+    margin: 0 auto;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+/* BUTTON */
+.btn {
+    background-color: var(--blue);
+    padding: 0.6rem 4rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--cyan);
+}
+
+.flex-items {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.flex-items > div {
+    padding: 1.5rem;
+    flex: 0 1 50%;
+}
+
+.flex-columns .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+}
+
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    /* flex-basis: 100%; */
+    flex: 1;
+    justify-content: center;
+}

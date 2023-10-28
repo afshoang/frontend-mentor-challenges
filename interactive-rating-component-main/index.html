@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="center">
+    <div class="card">
+      <div class="card--icon">
+        <span>
+          <img src="./images/icon-star.svg" alt="">
+        </span>
+      </div>
+      <div class="card--content">
+        <h3>How did we do?</h3>
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!
+        </p>
+      </div>
+      <form class="card--form">
+        <div>
+          <span>
+            <input type="radio" hidden name="rating" id="rating_1" value="1" />
+            <label for="rating_1">1</label>
+          </span>
+          <span>
+            <input type="radio" name="rating" id="rating_2" value="2" />
+            <label for="rating_2">2</label>
+          </span>
+          <span>
+            <input type="radio" name="rating" id="rating_3" value="3" />
+            <label for="rating_3">3</label>
+          </span>
+          <span>
+            <input type="radio" name="rating" id="rating_4" value="4" checked />
+            <label for="rating_4">4</label>
+          </span>
+          <span>
+            <input type="radio" name="rating" id="rating_5" value="5" />
+            <label for="rating_5">5</label>
+          </span>
+        </div>
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </form>
+    </div>
+
+    <div class="card card--hidden thank--you">
+      <div class="card--icon center">
+        <img src="./images/illustration-thank-you.svg" alt="">
+      </div>
+
+      <div class="center">
+        <span class="rating--selected">
+          You selected <span></span> out of 5
+        </span>
+      </div>
+
+      <div class="card--content">
+        <h3>Thank you!</h3>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+  </main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hoang Pham</a>.
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>

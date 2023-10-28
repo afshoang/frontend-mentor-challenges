@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --cyan: hsl(176, 68%, 64%);
+    --blue: hsl(198, 60%, 50%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    background: hsl(218, 28%, 13%);
+    color: var(--white);
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    line-height: 1.4;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.hero {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    color: var(--white);
+}
+
+.navbar .logo,
+footer .logo {
+    max-width: 140px;
+    height: 40px;
+}
+
+.navbar nav {
+    z-index: 9;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: hsl(0, 0%, 80%);
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.navbar ul li a:hover {
+    color: var(--white);
+    text-decoration: underline;
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+
+/* HEADER */
+.hero {
+    background-color: hsl(217, 28%, 15%);
+    height: 100vh;
+    position: relative;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    background: url('../images/bg-curvy-desktop.svg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+}
+
+.image-intro {
+    max-width: 400px;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding-bottom: 5rem;
+    z-index: 5;
+}
+
+.hero .content h1 {
+    max-width: 500px;
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.hero .content p {
+    max-width: 420px;
+    margin: 20px 0 20px;
+}
+
+/* ICONS */
+.icons h3 {
+    font-weight: 700;
+}
+
+.icons i img{
+    max-width: 4rem;
+    max-height: 5rem;
+}
+
+.icons .about-item-content {
+    margin-top: 1rem;
+    padding: 0 4rem;
+}
+
+/* SOLUTIONS */
+.solutions h2 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.solutions a {
+    display: flex;
+    align-items: center;
+    color: var(--cyan);
+    text-decoration: underline;
+}
+
+.solutions a:hover {
+    color: var(--white);
+}
+
+.solutions .icon-arrow {
+    margin-left: 5px;
+    background-image: url(../images/icon-arrow.svg);
+}
+
+.icon-arrow {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-size: cover;
+}
+
+.icon-arrow:hover {
+    filter: brightness(50) saturate(100%);
+}
+
+/* SHOWCASES */
+.cases .flex-items {
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+.cases .flex-items .card {
+    flex: 0 1 33.33333333%;
+    text-align: left;
+}
+
+.cases .flex-items .card:first-child {
+    position: relative;
+    z-index: 2;
+}
+
+.cases .flex-items .card:first-child::after {
+    content: "";
+    background-image: url("../images/bg-quotes.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -2.2rem;
+    left: 0;
+    z-index: 1;
+}
+
+.cases img.avatar {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+}
+
+.card {
+    background-color: hsl(219, 30%, 18%);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.profile h3 {
+    font-size: 12px;
+}
+
+.profile h3 span {
+    font-weight: 400;
+    font-size: 10px;
+}
+
+/* EMAIL SIGN UP */
+.email {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.email .row {
+    position: absolute;
+    text-align: center;
+    padding: 2rem 3rem;
+    background-color: hsl(219, 30%, 18%);
+    max-width: 750px;
+    border-radius: 5px;
+}
+
+.email h1 {
+    font-size: 25px;
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+    width: 100%;
+    height: 40px;
+}
+
+.input-box input {
+    height: 100%;
+    border-radius: 2rem;
+    border: none;
+}
+
+.input-box input[type="email"] {
+    width: 75%;
+    padding: 0 45px;
+    border: 2px solid #bfbfbf;
+}
+
+.input-box input[type="email"]:focus {
+    outline: none;
+}
+
+.input-box input[type="submit"] {
+    width: 25%;
+    padding: 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: hsl(216, 53%, 9%);
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 3rem;
+    margin-top: 10rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.contact {
+    display: flex;
+    flex: 0 1 60%;
+    justify-content: space-around;
+}
+
+.address{
+    display: flex;
+    gap: 2rem;
+    width: 70%;
+}
+
+.phone span {
+    margin-right: 1rem;
+}
+
+.footer-nav-link {
+    flex: 1 25%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-nav-link div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.social a i {
+    width: 25px;
+    border: 1px solid var(--white);
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.social a {
+    margin-right: 8px;
+}
+
+/* MOBILE */
+@media(max-width: 376px) {
+    .navbar {
+        padding: 2.5rem 1rem 0 1rem;
+        justify-content: space-between;
+    }
+
+    .navbar .logo {
+        max-width: 100px;
+    }
+
+    .navbar a {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .btn {
+        padding: 1rem 6rem;
+        border-radius: 2rem;
+        font-size: 14px;
+    }
+
+    .image-intro,
+    .solutions .column-1 {
+        max-width: 300px;
+    }
+
+    .hero::after {
+        content: "";
+        position: absolute;
+        background: url('../images/bg-curvy-mobile.svg');
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+    }
+
+    .flex-items>div {
+        flex: 0 1 100%;
+    }
+
+    .icons .about-item-content {
+        padding: 0 0.5rem;
+    }
+
+    .flex-columns .column {
+        flex-basis: 100%;
+    }
+
+    .solutions .row,
+    .cases .flex-items {
+        width: 85%;
+    }
+
+    .solutions h2 {
+        font-size: 18px;
+    }
+    
+    .cases .flex-items,
+    .footer-content {
+        flex-wrap: wrap;
+    }
+    
+    .cases .flex-items .card {
+        flex: 0 1 100%;
+    }
+
+    .cases .flex-items .card p {
+        font-size: 12px;
+    }
+
+    footer {
+        margin-top: 18rem;
+    }
+
+    .footer-content > div {
+        flex: 0 1 100%;
+    }
+
+    .footer-content .contact {
+        flex-direction: column;
+    }
+
+    .footer-content .address {
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .footer-nav-link {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .footer-content {
+        gap: 5rem;
+    }
+
+    .footer-content .social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .email .row {
+        padding: 2rem 1.5rem;
+        width: 85%;
+    }
+
+    .email form {
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .email h1 {
+        font-size: 20px;
+    }
+    
+    .input-box {
+        flex-direction: column;
+    }
+
+    .input-box input[type="email"],
+    .input-box input[type="submit"] {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .input-box input[type="submit"] {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+}
