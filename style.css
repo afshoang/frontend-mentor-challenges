@@ -119,35 +119,14 @@ body h1 {
     text-transform: capitalize;
 }
 
-.card-skills {
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.card-skills ul {
+.links-container ul {
     display: flex;
     gap: 0.5rem;
 }
 
-.card-skills ul .link {
+.links-container ul .link {
     color: var(--colors-black);
     cursor: pointer;
-}
-
-.card-skills ul li[data-type-skill="HTML"],
-.card-skills div[data-type-difficulty="newbie"]
-{
-    color: var(--colors-variant-1);
-}
-.card-skills ul li[data-type-skill="CSS"],
-.card-skills div[data-type-difficulty="junior"]
-{
-    color: var(--colors-variant-2);
-}
-.card-skills ul li[data-type-skill="JS"] {
-    color: var(--colors-variant-3);
 }
 
 footer {
