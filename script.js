@@ -1,36 +1,27 @@
 const challenges = [
     {
         name: "Fylo dark theme landing page",
-        difficulty: 1,
-        skills: ['HTML', 'CSS', 'JS'],
         folder: 'fylo-dark-theme-landing-page-master'
     },
     {
         name: "QR code component",
-        difficulty: 0,
-        skills: ['HTML', 'CSS'],
         folder: 'qr-code-component-main'
     },
     {
         name: "Results summary component",
-        difficulty: 0,
-        skills: ['HTML', 'CSS'],
         folder: 'results-summary-component-main'
     },
     {
         name: "interactive rating component",
-        difficulty: 0,
-        skills: ['HTML', 'CSS'],
         folder: 'interactive-rating-component-main'
+    },
+    {
+        name: "interactive rating component",
+        folder: 'four-card-feature-section-master'
     },
 ]
 
 const challengesContainer = document.querySelector('#list-challenges')
-const difficultyObj = {
-    0: 'newbie',
-    1: 'junior',
-    2: 'Intermediate'
-}
 
 challenges.forEach(challenge => {
     const cardEle = document.createElement('div')
