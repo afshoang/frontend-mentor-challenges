@@ -16,8 +16,12 @@ const challenges = [
         folder: 'interactive-rating-component-main'
     },
     {
-        name: "interactive rating component",
+        name: "four card feature section",
         folder: 'four-card-feature-section-master'
+    },
+    {
+        name: "faq accordion card",
+        folder: 'faq-accordion-card-main'
     },
 ]
 
