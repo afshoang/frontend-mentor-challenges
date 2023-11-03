@@ -10,9 +10,9 @@ Thanks for checking out this front-end coding challenge.
 
 ## Challenges
 
-- Grid layout on multiple screens
-- How to make use of CSS custom properties
+- Set differrent background image for multiple screen
 
 ## What I learned
 
-- Grid layout auto-fit, minmax functionalities, grid-template-areas
+- Transform with translateX translateY rotate
+- DOM manipulation
