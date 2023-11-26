@@ -4,6 +4,10 @@ const challenges = [
         folder: 'news-homepage-main'
     },
     {
+        name: "Advice generator app",
+        folder: 'advice-generator-app-main'
+    },
+    {
         name: "Fylo dark theme landing page",
         folder: 'fylo-dark-theme-landing-page-master'
     },
