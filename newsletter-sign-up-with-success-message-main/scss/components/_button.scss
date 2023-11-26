@@ -1,0 +1,21 @@
+@use '../abstracts/' as *;
+
+button {
+    outline: 0;
+    border: 0;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.btn {
+    width: 100%;
+    padding: 1rem 4rem;
+    color: $white;
+    background-color: $dark-slate-grey;
+    border-radius: .5rem;
+    transition: all .5s ease;
+
+    &:hover {
+        background-color: $primary-color;
+    }
+}
