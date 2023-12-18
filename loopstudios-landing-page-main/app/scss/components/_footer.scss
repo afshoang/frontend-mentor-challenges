@@ -1,0 +1,39 @@
+@use '../abstracts/' as *;
+
+footer {
+    padding: 3rem 1.5rem;
+    background-color: $black;
+
+    .footer {
+        @include flex(start, center);
+        flex-direction: column;
+        gap: 2rem;
+
+        &__left {
+            @include flex(start, center);
+            flex-direction: column;
+            gap: 2rem;
+
+            &__link ul {
+                @include flex(space-between, center);
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        &__right {
+            @include flex(start, center);
+            flex-direction: column;
+            gap: 1.2rem;
+
+            &__social {
+                @include flex(space-between, center);
+                gap: 1rem;
+            }
+
+            p {
+                color: $dark-gray;
+            }
+        }
+    }
+}

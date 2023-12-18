@@ -1,0 +1,19 @@
+@use '../abstracts/' as *;
+
+.interactive {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+
+    &__content {
+        @include flex(start, center);
+        gap: 1rem;
+        flex-direction: column;
+        padding: 1.5rem;
+        text-align: center;
+
+        p {
+            color: $dark-gray;
+        }
+    }
+}

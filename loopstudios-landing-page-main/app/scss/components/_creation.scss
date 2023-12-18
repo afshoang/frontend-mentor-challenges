@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+
+.creation {
+    @include flex(start, center);
+    flex-direction: column;
+    gap: 3rem;
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .btn {
+        order: 1;
+    }
+}

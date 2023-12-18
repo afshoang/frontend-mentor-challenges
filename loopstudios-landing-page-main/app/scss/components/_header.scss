@@ -1,0 +1,117 @@
+@use '../abstracts/' as *;
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: all .5s ease;
+    z-index: 100;
+
+    &.shrink {
+        background-color: $black;
+        
+        .header {
+            height: $header-shrink-height;
+        }
+    }
+
+    &.active {
+        background-color: $black;
+
+        .header {
+            &__close {
+                display: block;
+            }
+
+            &__toggle {
+                display: none;
+            }
+
+            &__nav {
+                @include flex(start, start);
+                top: $header-height;
+                opacity: 1;
+                height: 100vh;
+            }
+
+            &.active {
+                .header__nav {
+                    top: $header-shrink-height;
+                }
+            }
+        }
+    }
+    
+    .header {
+        @include flex(space-between, center);
+        
+        height: $header-height;
+
+        &__close {
+            display: none;
+        }
+
+        &__nav {
+            display: none;
+            position: absolute;
+            top: -100%;
+            right: 0;
+            width: 100%;
+            height: 0;
+            background-color: $black;
+            padding: 1.5rem;
+            padding-top: 10rem;
+
+            flex-direction: column;
+            gap: 15rem;
+            transition: all .5s ease;
+
+            ul {
+                @include flex(space-between, start);
+                flex-direction: column;
+                gap: 1.5rem;
+
+                li a {
+                    color: $white;
+                    cursor: pointer;
+                    font-family: $ff-secondary;
+                    font-size: 1.5rem;
+                    font-weight: $fw-light;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        
+        @include lg {
+            &__close,
+            &__toggle {
+                display: none;
+            }
+
+            &__nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                position: static;
+                padding: 1.5rem;
+                background-color: inherit;
+
+                ul {
+                    flex-direction: row;
+
+                    li a {
+                        color: $white;
+                        text-transform: capitalize;
+                        font-size: 1rem;
+                        font-weight: $fw-normal;
+
+                        
+                    }
+                }
+            }
+        }
+    }
+}

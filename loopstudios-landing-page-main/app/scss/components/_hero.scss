@@ -1,0 +1,45 @@
+@use '../abstracts/' as *; 
+
+.hero {
+    --fs-biggest: 2.5rem;
+
+    background-image: url(/images/mobile/image-hero.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: $header-height;
+    height: 100vh;
+
+    &__container {
+        div {
+            transform: translateY(70%);
+            border: 3px solid $white;
+            padding: 1.5rem;
+            
+            h1 {
+                font-family: $ff-secondary;
+                color: $white;
+                text-transform: uppercase;
+                font-weight: $fw-light;
+                font-size: var(--fs-biggest);
+                line-height: 1.1;
+            }
+        }
+    }
+
+    @include lg {
+        --fs-biggest: 3.5rem;
+        background-image: url(/images/desktop/image-hero.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__container {
+            div {
+                transform: translateY(50%);
+                width: 50%;            
+            }
+        }
+    }
+}

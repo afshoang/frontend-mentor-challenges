@@ -1,0 +1,24 @@
+@use '../abstracts/' as *;
+
+.section {
+    --fs-bigger: 1.75rem;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    &__wrapper {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    &__title {
+        font-size: var(--fs-bigger);
+        text-transform: uppercase;
+        font-family: $ff-secondary;
+        font-weight: $fw-light;
+    }
+
+    &__content {
+        color: $darker-gray;
+    }
+}

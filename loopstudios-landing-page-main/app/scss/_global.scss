@@ -1,0 +1,99 @@
+@use './abstracts/' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300;400&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $ff-main;
+    font-size: $fs-normal;
+    background-color: $white;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.4rem 1.8rem;
+    outline: 0;
+    font-family: $ff-main;
+    text-transform: uppercase;
+    font-size: .7rem;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    font-weight: $fw-normal;
+    border-radius: 3px;
+    border: 2px solid $black;
+    background-color: $white;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: $black;
+    color: $white;
+}
+
+.logo {
+    user-select: none;
+    transform: scale(.8);
+}
+
+.link {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: $white;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -.4rem;
+        left: 30%;
+        width: 50%;
+        border-bottom: 3px solid $white;
+        transition: all .3s ease;
+        transform: scale(0);
+    }
+
+    &:hover::after {
+        transform: scale(1);
+    }
+}
