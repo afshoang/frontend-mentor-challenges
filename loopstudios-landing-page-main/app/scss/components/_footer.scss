@@ -35,5 +35,21 @@ footer {
                 color: $dark-gray;
             }
         }
+
+        @include lg {
+            flex-direction: row;
+            justify-content: space-between;
+
+            &__left {
+                align-items: start;
+                &__link ul {
+                    flex-direction: row;
+                }
+            }
+
+            &__right {
+                align-items: end;
+            }
+        }
     }
 }

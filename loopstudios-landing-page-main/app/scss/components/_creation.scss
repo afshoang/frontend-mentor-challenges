@@ -10,6 +10,7 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: var(--gap);
+        width: 100%;
     }
 
     .btn {
@@ -32,6 +33,7 @@
     @include lg {
         &__content {
             grid-template-columns: repeat(4, 1fr);
+            padding: 0 3rem;
         }
     }
 }
