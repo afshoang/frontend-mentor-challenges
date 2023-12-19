@@ -97,3 +97,9 @@ body {
         transform: scale(1);
     }
 }
+
+@include lg {
+    .logo {
+        transform: scale(1);
+    }
+}

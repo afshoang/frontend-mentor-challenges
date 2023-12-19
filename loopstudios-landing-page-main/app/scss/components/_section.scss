@@ -21,4 +21,11 @@
     &__content {
         color: $darker-gray;
     }
+
+    @include lg {
+        --fs-bigger: 2.75rem;
+    
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+    }
 }

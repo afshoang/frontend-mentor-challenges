@@ -1,6 +1,7 @@
 @use '../abstracts/' as *;
 
 .creation {
+    --gap: 1.75rem;
     @include flex(start, center);
     flex-direction: column;
     gap: 3rem;
@@ -8,10 +9,29 @@
     &__content {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: var(--gap);
     }
 
     .btn {
         order: 1;
+    }
+
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &__content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .btn {
+            order: 0;
+        }
+    }
+
+    @include lg {
+        &__content {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 }
