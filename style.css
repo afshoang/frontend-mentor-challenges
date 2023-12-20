@@ -78,6 +78,7 @@ body h1 {
 
 .card-img {
     overflow: hidden;
+    aspect-ratio: 16/9;
 }
 
 .card-img img {

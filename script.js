@@ -1,5 +1,13 @@
 const challenges = [
     {
+        name: "Loop studio landing page",
+        folder: 'loopstudios-landing-page-main'
+    },
+    {
+        name: "Newsletter signup form",
+        folder: 'newsletter-sign-up-with-success-message-main'
+    },
+    {
         name: "News Homepage",
         folder: 'news-homepage-main'
     },
