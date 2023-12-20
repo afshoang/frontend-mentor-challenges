@@ -2,6 +2,8 @@
 
 .thanks-card {
     @include flex(space-between, start);
+    display: none;
+    opacity: 0;
     flex-direction: column;
     gap: 1.5rem;
     background-color: $white;
@@ -9,6 +11,7 @@
     max-width: 400px;
     padding: 2.5rem;
     position: relative;
+    transition: opacity 2s ease-in .5s;
 
     svg {
         width: 50px;
