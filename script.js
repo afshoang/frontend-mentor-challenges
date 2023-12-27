@@ -1,5 +1,9 @@
 const challenges = [
     {
+        name: "EasyBank landing page",
+        folder: 'easybank-landing-page-master'
+    },
+    {
         name: "Loop studio landing page",
         folder: 'loopstudios-landing-page-main'
     },
