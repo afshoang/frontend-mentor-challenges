@@ -186,7 +186,7 @@ button:not(:disabled) {
 .card {
     display: flex;
     flex-direction: column;
-    max-width: 18rem;
+    min-width: 0;
     height: 100%;
 }
 
@@ -368,6 +368,7 @@ button[aria-expanded="true"].nav-toggler span {
     align-items: center;
     margin-top: 3rem;
     text-align: center;
+    width: 18rem;
 }
 /* END FEATURES */
 
@@ -375,10 +376,10 @@ button[aria-expanded="true"].nav-toggler span {
 .articles__cards {
     margin-top: 3rem;
     row-gap: var(--gap-3);
-    /* justify-content: center; */
 }
 
 .articles__cards .card {
+    width: 18rem;
     border-radius: .5rem;
     overflow: hidden;
     box-shadow: var(--box-shadow);
